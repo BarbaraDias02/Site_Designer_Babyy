@@ -74,7 +74,7 @@ allInputs.forEach((input) => {
 // Verificar login
 function verifyLogin(email, password) {
   const request = new XMLHttpRequest();
-  request.open("GET", "./data/users.json", false);
+  request.open("GET", "users.json", false);
   request.send(null);
 
   localStorage.removeItem("userEmail");
